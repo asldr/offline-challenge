@@ -1,0 +1,108 @@
+:root {
+  --ratio: 1.35;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --line-height: 1.75;
+  --line-height-small: 1.2;
+  --font-stack-common: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-stack-alternate: Georgia, 'Times New Roman', Times, serif;
+  --measure: 65ch;
+  --color-lightest: #fff;
+  --color-darkest: #050505;
+  height: 100%;
+  line-height: var(--line-height);
+  font-size: calc(.25vw + 1em);
+  font-family: var(--font-stack-common);
+  background-color: var(--color-lightest);
+  color: var(--color-darkest);
+}
+
+@media (max-width: 699px) {
+
+  :root {
+    --ratio: 1.25;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: var(--measure);
+}
+
+.stack > * + * {
+  margin-top: var(--s1);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: var(--line-height-small);
+}
+
+h1 {
+  font-size: var(--s4);
+}
+
+h2 {
+  font-size: var(--s3);
+}
+
+h3 {
+  font-size: var(--s2);
+}
+
+h4 {
+  font-size: var(--s1);
+}
+
+a {
+  text-decoration: underline;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+ol[class],
+ul[class] {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+ol:not([class]),
+ul:not([class]) {
+  padding-left: 1em;
+}
