@@ -23,8 +23,18 @@
     "end_date": {
       "type": "date"
     },
-    "created_at": {
-      "type": "datetime"
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "participants": {
+      "via": "challenges",
+      "collection": "participant",
+      "dominant": true
+    },
+    "goal": {
+      "type": "string",
+      "required": true
     }
   }
 }
