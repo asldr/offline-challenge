@@ -13,10 +13,6 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "start_date": {
       "type": "date"
     },
@@ -28,12 +24,16 @@
       "required": true
     },
     "participants": {
-      "via": "challenges",
       "collection": "participant",
+      "via": "challenges",
       "dominant": true
     },
     "goal": {
       "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
       "required": true
     }
   }

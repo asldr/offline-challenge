@@ -19,9 +19,8 @@
       "type": "password"
     },
     "challenges": {
-      "unique": true,
-      "collection": "challenge",
-      "via": "participants"
+      "via": "participants",
+      "collection": "challenge"
     }
   }
 }
