@@ -1,11 +1,13 @@
 <script>
-	export let name;
+  import MainHeader from './components/MainHeader.svelte';
+  import Styleguide from './components/Styleguide.svelte';
+  import MainFooter from './components/MainFooter.svelte';
 </script>
 
-<main>
-	<article class="stack">
-    <h1>Hey Sportskanone!</h1>
-    <p>Schön, dass du den Weg zu uns gefunden hast. Du kannst dich hier anmelden und direkt an einer der zahlreichen Herausforderungen teilnehmen.</p>
-    <button>Klar, ich mache mit!</button>
-  </article>
+<MainHeader/>
+<main class="main">
+	<div class="container">
+    <Styleguide/>
+  </div>
 </main>
+<MainFooter/>
