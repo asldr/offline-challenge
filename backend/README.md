@@ -4,12 +4,14 @@ The following requests are currently available (WIP). <br />
 There are request for **challenges** and **participants** so far.
 
 ## Create challenge
+
 Creates a new challenge
 
 ### Request
-```POST http://localhost:1337/challenges```
 
-### Example Payload 
+`POST http://localhost:1337/challenges`
+
+### Example Payload
 
 ```
 {
@@ -20,23 +22,25 @@ Creates a new challenge
 }
 ```
 
-| Property     | Description                   |
-| :----------: | :--------------------------:  |
-| name*        | name of the challenge         |
-| description* | description of the challenge  |
-| start_date   | start date of the challenge   |
-| end_date     | end date of the challenge     |
-| type*        | type of the challenge         |
-| participants | participants of the challenge |
-| goal*        | goal of the challenge         |
+|   Property    |          Description          |
+| :-----------: | :---------------------------: |
+|    name\*     |     name of the challenge     |
+| description\* | description of the challenge  |
+|  start_date   |  start date of the challenge  |
+|   end_date    |   end date of the challenge   |
+|    type\*     |     type of the challenge     |
+| participants  | participants of the challenge |
+|    goal\*     |     goal of the challenge     |
 
 `* required`
 
 ## Update a challenge
+
 Updates a challenge by ID, using the same payload properties as POST
 
 ### Request
-```PUT http://localhost:1337/challenges/:id```
+
+`PUT http://localhost:1337/challenges/:id`
 
 ### Example Payload
 
@@ -49,10 +53,12 @@ Updates a challenge by ID, using the same payload properties as POST
 ```
 
 ## Get all challenges
+
 Gets all challenges in database
 
 ### Request
-```GET http://localhost:1337/challenges```
+
+`GET http://localhost:1337/challenges`
 
 ### Example response
 
@@ -95,10 +101,12 @@ Gets all challenges in database
 ```
 
 ## Get a single challenge
+
 Gets a single challenge by ID from database
 
 ### Request
-```GET http://localhost:1337/challenges/:id```
+
+`GET http://localhost:1337/challenges/:id`
 
 ### Example response
 
@@ -122,7 +130,8 @@ Gets a single challenge by ID from database
 Removes a challenge, identified by ID
 
 ### Request
-```DELETE http://localhost:1337/challenges/:id```
+
+`DELETE http://localhost:1337/challenges/:id`
 
 ### Example response
 
@@ -148,20 +157,22 @@ Removes a challenge, identified by ID
 Creates a participant
 
 ### Request
-```POST http://localhost:1337/participants/```
 
-| Property   | Description                   |
-| :--------: | :---------------------------: |
-| name       | name of the participant       |
-| email      | email of the participant      |
-| password   | password of the participant   |
-| challenges | challenges of the participant |
+`POST http://localhost:1337/participants/`
+
+|  Property  |             Description              |
+| :--------: | :----------------------------------: |
+|    name    |       name of the participant        |
+|    uui     | unique identifier of the participant |
+| challenges |    challenges of the participant     |
 
 ## Get all participants
+
 Gets all participants in database
 
 ### Request
-```GET http://localhost:1337/participants```
+
+`GET http://localhost:1337/participants`
 
 ### Example response
 
@@ -222,10 +233,12 @@ Gets all participants in database
 ```
 
 ## Get a single participant
+
 Gets a single participant by ID from database
 
 ### Request
-```GET http://localhost:1337/participants/:id```
+
+`GET http://localhost:1337/participants/:id`
 
 ### Example response
 

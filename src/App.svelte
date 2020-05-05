@@ -1,13 +1,14 @@
 <script>
-  import MainHeader from './components/MainHeader.svelte';
-  import Styleguide from './components/Styleguide.svelte';
-  import MainFooter from './components/MainFooter.svelte';
+  import MainHeader from "./components/MainHeader.svelte";
+  import Styleguide from "./components/Styleguide.svelte";
+  import MainFooter from "./components/MainFooter.svelte";
+  import CreateAccount from "./components/CreateAccount.svelte";
 </script>
 
-<MainHeader/>
+<MainHeader />
 <main class="main">
-	<div class="container">
-    <Styleguide/>
+  <div class="container">
+    <CreateAccount />
   </div>
 </main>
-<MainFooter/>
+<MainFooter />

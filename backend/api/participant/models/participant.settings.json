@@ -12,15 +12,13 @@
     "name": {
       "type": "string"
     },
-    "email": {
-      "type": "email"
-    },
-    "password": {
-      "type": "password"
-    },
     "challenges": {
-      "via": "participants",
-      "collection": "challenge"
+      "collection": "challenge",
+      "via": "participants"
+    },
+    "uuid": {
+      "type": "uid",
+      "required": true
     }
   }
 }

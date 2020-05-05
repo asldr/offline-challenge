@@ -24,8 +24,8 @@
       "required": true
     },
     "participants": {
-      "collection": "participant",
       "via": "challenges",
+      "collection": "participant",
       "dominant": true
     },
     "goal": {
